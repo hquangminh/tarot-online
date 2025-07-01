@@ -76,6 +76,11 @@
   <div class="deck" id="deck"></div>
 
   <div class="result" id="result"></div>
+  <div id="extraContainer" style="margin-top: 20px; display: none;">
+    <button id="extraBtn" onclick="rutThemLa()">🔍 Chọn thêm 1 lá lời khuyên</button>
+    <div id="extraCard" class="result"></div>
+  </div>
+  
 
   <script>
     let cards = [];
@@ -103,24 +108,32 @@
     }
 
     function startShuffle() {
-      if (cards.length === 0) {
-        alert("Đang tải bộ bài, vui lòng thử lại sau vài giây...");
-        return;
-      }
-      selectedCards = [];
-      const deckContainer = document.getElementById("deck");
-      deckContainer.innerHTML = "";
-      const drawn = shuffleDeck();
+  if (cards.length === 0) {
+    alert("Đang tải bộ bài, vui lòng thử lại sau vài giây...");
+    return;
+  }
 
-      drawn.forEach((card) => {
-        const cardDiv = document.createElement("div");
-        cardDiv.className = "card";
-        cardDiv.onclick = () => selectCard(card, cardDiv);
-        deckContainer.appendChild(cardDiv);
-      });
+  const userQ = document.getElementById("userQuestion").value.trim();
+  if (userQ === "") {
+    alert("Vui lòng nhập câu hỏi trước khi xào bài.");
+    return;
+  }
 
-      document.getElementById("result").innerHTML = "<p>Chọn 3 lá bài để xem lời giải 🌟</p>";
-    }
+  selectedCards = [];
+  const deckContainer = document.getElementById("deck");
+  deckContainer.innerHTML = "";
+  const drawn = shuffleDeck();
+
+  drawn.forEach((card) => {
+    const cardDiv = document.createElement("div");
+    cardDiv.className = "card";
+    cardDiv.onclick = () => selectCard(card, cardDiv);
+    deckContainer.appendChild(cardDiv);
+  });
+
+  document.getElementById("result").innerHTML = "<p>Chọn 3 lá bài để xem lời giải 🌟</p>";
+  document.getElementById("extraContainer").style.display = "none"; // ẩn lại nút rút thêm
+}
 
     function selectCard(card, cardDiv) {
       if (selectedCards.length >= 3 || cardDiv.classList.contains("selected")) return;
@@ -132,28 +145,67 @@
         revealCards();
       }
     }
+    function rutThemLa() {
+  if (extraCount >= 3) {
+    alert("Bạn đã rút tối đa 3 lá thêm.");
+    return;
+  }
 
-    function revealCards() {
-      const resultDiv = document.getElementById("result");
-      const userQ = document.getElementById("userQuestion").value;
-      const topic = document.getElementById("question").options[document.getElementById("question").selectedIndex].text;
+  const unusedCards = cards.filter(c => !selectedCards.includes(c));
+  if (unusedCards.length === 0) {
+    alert("Không còn lá nào để rút thêm.");
+    return;
+  }
 
-      let content = `<p><em>Chủ đề:</em> ${topic}</p>
-                     <p><em>Câu hỏi:</em> ${userQ}</p>`;
+  const extra = unusedCards[Math.floor(Math.random() * unusedCards.length)];
+  selectedCards.push(extra); // Để không trùng
 
-      selectedCards.forEach((card, i) => {
-        content += `
-          <div class="card-reveal">
-            <img src="${card.img}" alt="${card.name}">
-            <p><strong>Lá ${i + 1}: ${card.name}</strong></p>
-            <p><strong>Ý nghĩa:</strong> ${card.meaning}</p>
-          </div>
-        `;
-      });
+  const cardHtml = `
+    <div class="card-reveal">
+      <img src="${extra.img}" alt="${extra.name}">
+      <p><strong>🃏 Lá thêm ${extraCount + 1}: ${extra.name}</strong></p>
+      <p><strong>Ý nghĩa:</strong> ${extra.meaning}</p>
+    </div>
+  `;
 
-      document.getElementById("deck").innerHTML = "";
-      resultDiv.innerHTML = content;
-    }
+  document.getElementById("extraCard").innerHTML += cardHtml;
+
+  extraCount++;
+  if (extraCount >= 3) {
+    document.getElementById("extraBtn").disabled = true;
+    document.getElementById("extraBtn").innerText = "Đã chọn đủ 3 lá thêm";
+  }
+}
+
+let extraCount = 0;
+
+function revealCards() {
+  const resultDiv = document.getElementById("result");
+  const userQ = document.getElementById("userQuestion").value;
+  const topic = document.getElementById("question").options[document.getElementById("question").selectedIndex].text;
+
+  let content = `<p><em><strong>Chủ đề:</strong></em> ${topic} &nbsp; <em><strong>Câu hỏi:</strong></em> ${userQ}</p>`;
+
+  selectedCards.forEach((card, i) => {
+    content += `
+      <div class="card-reveal">
+        <img src="${card.img}" alt="${card.name}">
+        <p><strong>Lá ${i + 1}: ${card.name}</strong></p>
+        <p><strong>Ý nghĩa:</strong> ${card.meaning}</p>
+      </div>
+    `;
+  });
+
+  resultDiv.innerHTML = content;
+
+  // Reset và hiện nút chọn thêm lá
+  document.getElementById("extraContainer").style.display = "block";
+  document.getElementById("extraCard").innerHTML = "";
+  document.getElementById("extraBtn").disabled = false;
+  document.getElementById("extraBtn").innerText = "🔍 Chọn thêm 1 lá lời khuyên";
+  extraCount = 0;
+}
+
 
     // Load 78 lá bài khi trang tải
     window.onload = loadCards;

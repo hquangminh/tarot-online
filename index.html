@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trải Bài Tarot 3 Lá</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2e9e4;
+      text-align: center;
+      padding: 40px;
+    }
+    select, input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    .deck {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .card {
+      width: 120px;
+      height: 200px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/RWS_Tarot_Back.jpg') center/cover no-repeat;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s, margin-bottom 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card.selected {
+      transform: translateY(-20px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    .result {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .card-reveal {
+      width: 200px;
+    }
+    .card-reveal img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔮 Chọn 3 Lá Bài Tarot 🔮</h1>
+
+  <div>
+    <label>Chọn vấn đề bạn quan tâm:</label><br>
+    <select id="question">
+      <option value="tinh_yeu">Tình yêu</option>
+      <option value="su_nghiep">Sự nghiệp</option>
+      <option value="tai_chinh">Tài chính</option>
+      <option value="suc_khoe">Sức khỏe</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Viết rõ nội dung bạn muốn hỏi:</label><br>
+    <input type="text" id="userQuestion" placeholder="Ví dụ: Người ấy có còn yêu mình không?" size="50">
+  </div>
+
+  <button onclick="startShuffle()">Xào Bài 🔁</button>
+
+  <div class="deck" id="deck"></div>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    let cards = [];
+
+    async function loadCards() {
+  const response = await fetch('tarot_cards_full_78.json');
+  const data = await response.json();
+  cards = data.cards.map(card => ({
+    name: card.name,
+    img: card.image || 'https://upload.wikimedia.org/wikipedia/commons/5/5d/RWS_Tarot_Back.jpg',
+    meaning: card.meaning_up || "Không rõ ý nghĩa."
+  }));
+}
+
+
+    let selectedCards = [];
+
+    function shuffleDeck() {
+      let shuffled = [...cards];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled.slice(0, 12);
+    }
+
+    function startShuffle() {
+      if (cards.length === 0) {
+        alert("Đang tải bộ bài, vui lòng thử lại sau vài giây...");
+        return;
+      }
+      selectedCards = [];
+      const deckContainer = document.getElementById("deck");
+      deckContainer.innerHTML = "";
+      const drawn = shuffleDeck();
+
+      drawn.forEach((card) => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "card";
+        cardDiv.onclick = () => selectCard(card, cardDiv);
+        deckContainer.appendChild(cardDiv);
+      });
+
+      document.getElementById("result").innerHTML = "<p>Chọn 3 lá bài để xem lời giải 🌟</p>";
+    }
+
+    function selectCard(card, cardDiv) {
+      if (selectedCards.length >= 3 || cardDiv.classList.contains("selected")) return;
+
+      cardDiv.classList.add("selected");
+      selectedCards.push(card);
+
+      if (selectedCards.length === 3) {
+        revealCards();
+      }
+    }
+
+    function revealCards() {
+      const resultDiv = document.getElementById("result");
+      const userQ = document.getElementById("userQuestion").value;
+      const topic = document.getElementById("question").options[document.getElementById("question").selectedIndex].text;
+
+      let content = `<p><em>Chủ đề:</em> ${topic}</p>
+                     <p><em>Câu hỏi:</em> ${userQ}</p>`;
+
+      selectedCards.forEach((card, i) => {
+        content += `
+          <div class="card-reveal">
+            <img src="${card.img}" alt="${card.name}">
+            <p><strong>Lá ${i + 1}: ${card.name}</strong></p>
+            <p><strong>Ý nghĩa:</strong> ${card.meaning}</p>
+          </div>
+        `;
+      });
+
+      document.getElementById("deck").innerHTML = "";
+      resultDiv.innerHTML = content;
+    }
+
+    // Load 78 lá bài khi trang tải
+    window.onload = loadCards;
+  </script>
+</body>
+</html>

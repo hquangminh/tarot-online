@@ -1,0 +1,394 @@
+{
+  "cards": [
+    {
+      "name": "The Fool",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_00_Fool.jpg",
+      "meaning_up": "Khởi đầu mới, tự do, mạo hiểm."
+    },
+    {
+      "name": "The Magician",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg",
+      "meaning_up": "Hành động, sáng tạo, tiềm năng."
+    },
+    {
+      "name": "The High Priestess",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/RWS_Tarot_02_High_Priestess.jpg",
+      "meaning_up": "Trực giác, điều bí ẩn, tiềm thức."
+    },
+    {
+      "name": "The Empress",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/RWS_Tarot_03_Empress.jpg",
+      "meaning_up": "Nuôi dưỡng, sáng tạo, sung túc."
+    },
+    {
+      "name": "The Emperor",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/RWS_Tarot_04_Emperor.jpg",
+      "meaning_up": "Quyền lực, cấu trúc, ổn định."
+    },
+    {
+      "name": "The Hierophant",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/RWS_Tarot_05_Hierophant.jpg",
+      "meaning_up": "Tín ngưỡng, truyền thống, tri thức."
+    },
+    {
+      "name": "The Lovers",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/TheLovers.jpg",
+      "meaning_up": "Lựa chọn, mối quan hệ, hòa hợp."
+    },
+    {
+      "name": "The Chariot",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/RWS_Tarot_07_Chariot.jpg",
+      "meaning_up": "Chiến thắng, kiểm soát, tiến lên."
+    },
+    {
+      "name": "Strength",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg",
+      "meaning_up": "Dũng cảm, kiểm soát bản thân."
+    },
+    {
+      "name": "The Hermit",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/RWS_Tarot_09_Hermit.jpg",
+      "meaning_up": "Chiêm nghiệm, tìm kiếm nội tâm."
+    },
+    {
+      "name": "Wheel of Fortune",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/RWS_Tarot_10_Wheel_of_Fortune.jpg",
+      "meaning_up": "Biến chuyển, định mệnh."
+    },
+    {
+      "name": "Justice",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/RWS_Tarot_11_Justice.jpg",
+      "meaning_up": "Công bằng, pháp lý, sự thật."
+    },
+    {
+      "name": "The Hanged Man",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/RWS_Tarot_12_Hanged_Man.jpg",
+      "meaning_up": "Hy sinh, tạm dừng, thay đổi góc nhìn."
+    },
+    {
+      "name": "Death",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/RWS_Tarot_13_Death.jpg",
+      "meaning_up": "Chấm dứt, tái sinh, chuyển hóa."
+    },
+    {
+      "name": "Temperance",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/RWS_Tarot_14_Temperance.jpg",
+      "meaning_up": "Cân bằng, hài hòa, điều độ."
+    },
+    {
+      "name": "The Devil",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/RWS_Tarot_15_Devil.jpg",
+      "meaning_up": "Ràng buộc, cám dỗ, dục vọng."
+    },
+    {
+      "name": "The Tower",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg",
+      "meaning_up": "Sụp đổ, thay đổi bất ngờ."
+    },
+    {
+      "name": "The Star",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/RWS_Tarot_17_Star.jpg",
+      "meaning_up": "Hy vọng, chữa lành, cảm hứng."
+    },
+    {
+      "name": "The Moon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/RWS_Tarot_18_Moon.jpg",
+      "meaning_up": "Ảo giác, trực giác, cảm xúc."
+    },
+    {
+      "name": "The Sun",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/RWS_Tarot_19_Sun.jpg",
+      "meaning_up": "Thành công, lạc quan, hạnh phúc."
+    },
+    {
+      "name": "Judgement",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/RWS_Tarot_20_Judgement.jpg",
+      "meaning_up": "Thức tỉnh, quyết định, gọi mời."
+    },
+    {
+      "name": "The World",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/RWS_Tarot_21_World.jpg",
+      "meaning_up": "Hoàn thành, chu kỳ khép lại."
+    },
+    {
+      "name": "Ace of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Wands01.jpg",
+      "meaning_up": "Khởi đầu, cơ hội mới. (Gậy)"
+    },
+    {
+      "name": "Two of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Wands02.jpg",
+      "meaning_up": "Lựa chọn, cân bằng. (Gậy)"
+    },
+    {
+      "name": "Three of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wands03.jpg/250px-Wands03.jpg",
+      "meaning_up": "Phát triển, hợp tác. (Gậy)"
+    },
+    {
+      "name": "Four of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Wands04.jpg",
+      "meaning_up": "Ổn định, nghỉ ngơi. (Gậy)"
+    },
+    {
+      "name": "Five of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Wands05.jpg",
+      "meaning_up": "Mất mát, thách thức. (Gậy)"
+    },
+    {
+      "name": "Six of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Wands06.jpg",
+      "meaning_up": "Chiến thắng, hồi phục. (Gậy)"
+    },
+    {
+      "name": "Seven of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Wands07.jpg/960px-Wands07.jpg",
+      "meaning_up": "Bảo vệ quan điểm. (Gậy)"
+    },
+    {
+      "name": "Eight of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Wands08.jpg",
+      "meaning_up": "Tiến triển, di chuyển. (Gậy)"
+    },
+    {
+      "name": "Nine of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tarot_Nine_of_Wands.jpg",
+      "meaning_up": "Kiên cường, phòng thủ. (Gậy)"
+    },
+    {
+      "name": "Ten of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wands10.jpg/960px-Wands10.jpg",
+      "meaning_up": "Gánh nặng, kết thúc. (Gậy)"
+    },
+    {
+      "name": "Page of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wands11.jpg/250px-Wands11.jpg",
+      "meaning_up": "Tin tức, khởi đầu học hỏi. (Gậy)"
+    },
+    {
+      "name": "Knight of Wands",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeLoFJrgqPmH-7W60HvC-F8AklWe3u9BkzzQ&s",
+      "meaning_up": "Hành động, theo đuổi. (Gậy)"
+    },
+    {
+      "name": "Queen of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Wands13.jpg",
+      "meaning_up": "Trực giác, nuôi dưỡng. (Gậy)"
+    },
+    {
+      "name": "King of Wands",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Wands14.jpg/250px-Wands14.jpg",
+      "meaning_up": "Lãnh đạo, quyền lực. (Gậy)"
+    },
+    {
+      "name": "Ace of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Cups01.jpg",
+      "meaning_up": "Khởi đầu, cơ hội mới. (Ly)"
+    },
+    {
+      "name": "Two of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Cups02.jpg",
+      "meaning_up": "Lựa chọn, cân bằng. (Ly)"
+    },
+    {
+      "name": "Three of Cups",
+      "image": "https://hoctarot.com/wp-content/uploads/2020/01/cups03.jpg",
+      "meaning_up": "Phát triển, hợp tác. (Ly)"
+    },
+    {
+      "name": "Four of Cups",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAg2j1IfAhK4ZKwl2MdOUy5vnT4lvo5RcpQ&s",
+      "meaning_up": "Ổn định, nghỉ ngơi. (Ly)"
+    },
+    {
+      "name": "Five of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Cups05.jpg",
+      "meaning_up": "Mất mát, thách thức. (Ly)"
+    },
+    {
+      "name": "Six of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Cups06.jpg",
+      "meaning_up": "Chiến thắng, hồi phục. (Ly)"
+    },
+    {
+      "name": "Seven of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Cups07.jpg",
+      "meaning_up": "Bảo vệ quan điểm. (Ly)"
+    },
+    {
+      "name": "Eight of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cups08.jpg",
+      "meaning_up": "Tiến triển, di chuyển. (Ly)"
+    },
+    {
+      "name": "Nine of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Cups09.jpg",
+      "meaning_up": "Kiên cường, phòng thủ. (Ly)"
+    },
+    {
+      "name": "Ten of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Cups10.jpg",
+      "meaning_up": "Gánh nặng, kết thúc. (Ly)"
+    },
+    {
+      "name": "Page of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cups11.jpg",
+      "meaning_up": "Tin tức, khởi đầu học hỏi. (Ly)"
+    },
+    {
+      "name": "Knight of Cups",
+      "image": "https://i0.wp.com/stillsmallvoicetarot.com/wp-content/uploads/2022/03/RWS-Knight-of-Cups.jpg?resize=300%2C506&ssl=1",
+      "meaning_up": "Hành động, theo đuổi. (Ly)"
+    },
+    {
+      "name": "Queen of Cups",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Cups13.jpg",
+      "meaning_up": "Trực giác, nuôi dưỡng. (Ly)"
+    },
+    {
+      "name": "King of Cups",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3npS63zrjqrunEFGGL7ZB83a897b2-hNJrQ&s",
+      "meaning_up": "Lãnh đạo, quyền lực. (Ly)"
+    },
+    {
+      "name": "Ace of Swords",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV5SzBr_FYxDeUG_lh_GTkPqh465uwgA_fw&s",
+      "meaning_up": "Khởi đầu, cơ hội mới. (Kiếm)"
+    },
+    {
+      "name": "Two of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Swords02.jpg",
+      "meaning_up": "Lựa chọn, cân bằng. (Kiếm)"
+    },
+    {
+      "name": "Three of Swords",
+      "image": "https://dich.kabala.vn/tarot/cards/s03.jpg",
+      "meaning_up": "Phát triển, hợp tác. (Kiếm)"
+    },
+    {
+      "name": "Four of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Swords04.jpg",
+      "meaning_up": "Ổn định, nghỉ ngơi. (Kiếm)"
+    },
+    {
+      "name": "Five of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Swords05.jpg",
+      "meaning_up": "Mất mát, thách thức. (Kiếm)"
+    },
+    {
+      "name": "Six of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Swords06.jpg",
+      "meaning_up": "Chiến thắng, hồi phục. (Kiếm)"
+    },
+    {
+      "name": "Seven of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Swords07.jpg",
+      "meaning_up": "Bảo vệ quan điểm. (Kiếm)"
+    },
+    {
+      "name": "Eight of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Swords08.jpg",
+      "meaning_up": "Tiến triển, di chuyển. (Kiếm)"
+    },
+    {
+      "name": "Nine of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Swords09.jpg",
+      "meaning_up": "Kiên cường, phòng thủ. (Kiếm)"
+    },
+    {
+      "name": "Ten of Swords",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVKHxUTCW8oWp74xonMk75BoB-AC2g_T4nw&s",
+      "meaning_up": "Gánh nặng, kết thúc. (Kiếm)"
+    },
+    {
+      "name": "Page of Swords",
+      "image": "https://tarottools.com/wp-content/uploads/2016/05/Swords-11.jpg",
+      "meaning_up": "Tin tức, khởi đầu học hỏi. (Kiếm)"
+    },
+    {
+      "name": "Knight of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Swords12.jpg",
+      "meaning_up": "Hành động, theo đuổi. (Kiếm)"
+    },
+    {
+      "name": "Queen of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Swords13.jpg",
+      "meaning_up": "Trực giác, nuôi dưỡng. (Kiếm)"
+    },
+    {
+      "name": "King of Swords",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Swords14.jpg",
+      "meaning_up": "Lãnh đạo, quyền lực. (Kiếm)"
+    },
+    {
+      "name": "Ace of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pents01.jpg",
+      "meaning_up": "Khởi đầu, cơ hội mới. (Xu)"
+    },
+    {
+      "name": "Two of Pentacles",
+      "image": "https://1.bp.blogspot.com/-jYglr6Wk_A0/XUePsrfF3SI/AAAAAAAALts/Wt9BnQ-SP4kzS07PmEoiZFwgdocot2WAACLcBGAs/s1600/65%2B-%2BTwo%2Bof%2BPentacles.jpg",
+      "meaning_up": "Lựa chọn, cân bằng. (Xu)"
+    },
+    {
+      "name": "Three of Pentacles",
+      "image": "https://images.squarespace-cdn.com/content/v1/575c175722482ea13706dd8a/1511801774083-RV462W28008KNH3ODEI5/Minors+Pentacles+03.jpg",
+      "meaning_up": "Phát triển, hợp tác. (Xu)"
+    },
+    {
+      "name": "Four of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Pents04.jpg",
+      "meaning_up": "Ổn định, nghỉ ngơi. (Xu)"
+    },
+    {
+      "name": "Five of Pentacles",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDu60wxMFPrnU1qg6F63A0JnNCoRQxW8ZKfw&s",
+      "meaning_up": "Mất mát, thách thức. (Xu)"
+    },
+    {
+      "name": "Six of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pents06.jpg",
+      "meaning_up": "Chiến thắng, hồi phục. (Xu)"
+    },
+    {
+      "name": "Seven of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Pents07.jpg",
+      "meaning_up": "Bảo vệ quan điểm. (Xu)"
+    },
+    {
+      "name": "Eight of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Pents08.jpg",
+      "meaning_up": "Tiến triển, di chuyển. (Xu)"
+    },
+    {
+      "name": "Nine of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pents09.jpg",
+      "meaning_up": "Kiên cường, phòng thủ. (Xu)"
+    },
+    {
+      "name": "Ten of Pentacles",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVUcinhJtCSKZEbQxHyy-4ls2genLJvhB8Fw&s",
+      "meaning_up": "Gánh nặng, kết thúc. (Xu)"
+    },
+    {
+      "name": "Page of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Pents11.jpg",
+      "meaning_up": "Tin tức, khởi đầu học hỏi. (Xu)"
+    },
+    {
+      "name": "Knight of Pentacles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pents12.jpg/960px-Pents12.jpg",
+      "meaning_up": "Hành động, theo đuổi. (Xu)"
+    },
+    {
+      "name": "Queen of Pentacles",
+      "image": "https://images.squarespace-cdn.com/content/v1/575c175722482ea13706dd8a/1536340039653-R4UFRMBS3J0KR5TZA46N/Minors+Pentacles+Queen.jpg",
+      "meaning_up": "Trực giác, nuôi dưỡng. (Xu)"
+    },
+    {
+      "name": "King of Pentacles",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS83flo0deSfDIxbjG_Jc7NVs0Ra1m7Zsrvkg&s",
+      "meaning_up": "Lãnh đạo, quyền lực. (Xu)"
+    }
+  ]
+}
